@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tunder Bifflin</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://media.istockphoto.com/id/858514508/de/vektor/haufen-luftballons-im-cartoon-stil-flache-isoliert-auf-wei%C3%9Fem-hintergrund.jpg?s=612x612&w=0&k=20&c=B2EuRHAtq2YYJjD_Ou7LyEtc5llmlyXGn771gel1wqk="
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="containerLarge">
+        <iframe
+          src="https://giphy.com/embed/2SXWSgehvUEly80Ou6"
+          frameborder="0"
+          class="giphy-embed"
+        ></iframe>
+        <div class="containerSmall">
+          <div class="companyName">Tunder Bifflin</div>
+          <div class="slogan">Fill your life with colours!...</div>
+          <button id="changeLanguage">RU</button>
+        </div>
+      </div>
+    </header>
+    <div class="containerForms">
+      <div class="signup">
+        <div class="titleTwo">
+          If you don't have an account,
+          <br />please sign up!
+        </div>
+        <form id="new-client" action="/apply/" method="POST">
+        <div>
+          <fieldset id="loginFieldset">
+            <legend>
+              <span id="spnlgn"> Enter your login: </span>
+            </legend>
+            <div class="forInputFields">
+              <input
+                id="login"
+                type="text"
+                placeholder="it can be your e-mail"
+                size="16"
+                name="login"
+                class="cleanInputs"
+                required
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div id="loginSubmitted" class="beforeSubmission">Your login is:
+        </div>
+        <div>
+          <fieldset id="emailFieldset">
+            <legend>
+              <span id="spanEmail"> Enter your e-mail: </span>
+            </legend>
+            <div class="forInputFields">
+              <input
+                id="email"
+                type="email"
+                placeholder="your e-mail"
+                size="16"
+                name="email"
+                class="cleanInputs"
+                required
+              />
+            </div>
+          </fieldset>
+        </div>
+        <div id="emailSubmitted" class="beforeSubmission">Your e-mail is:</div>
+        <div>
+          <fieldset id="passOneFieldset">
+            <legend>
+              <span id="firstPassword"> Enter your password: </span>
+            </legend>
+            <div class="forInputFields">
+              <input
+                id="passwordOne"
+                type="password"
+                placeholder="your password"
+                minlength="5"
+                size="16"
+                name="passwordOne"
+                class="cleanInputs"
+                required
+              />
+              <span
+                ><i id="closedEyeOne" class="fa-solid fa-eye-slash fa-xs"></i
+              ></span>
+            </div>
+          </fieldset>
+        </div>
+        <div id="pOneSub" class="beforeSubmission">Your password is:</div>
+        <div>
+          <fieldset id="passTwoFieldset">
+            <legend>
+              <span id="secondPassword"> Re-enter your password: </span>
+            </legend>
+            <div class="forInputFields">
+              <input
+                id="passwordTwo"
+                type="password"
+                placeholder="your password"
+                minlength="5"
+                size="16"
+                name="passwordTwo"
+                class="cleanInputs"
+                required
+              />
+              <span
+                ><i id="closedEyeTwo" class="fa-solid fa-eye-slash fa-xs"></i
+              ></span>
+            </div>
+          </fieldset>
+        </div>
+        <div id="pTwoSub" class="beforeSubmission">
+          Is this the same password?
+        </div>
+        <div>
+          <fieldset id="langFieldset">
+            <legend>
+              <span id="spanLang"> What is your language? </span>
+            </legend>
+            <select id="language" class="language" style="width: 200x" name="language" required>
+              <option value="default">**Choose your language**</option>
+              <option value="Russian">Russian</option>
+              <option value="German">German</option>
+              <option value="English">English</option>
+            </select>
+          </fieldset>
+        </div>
+        <div id="langSubmitted" class="beforeSubmission">Your language is:</div>
+        <div class="forInputFields">
+          <label class="checkboxWrapper">
+            <input id="checkbox" class="checkbox" type="checkbox" name="checkbox" required />
+            <span class="checkmark"></span>
+            <div id="checkboxStatement" class="hiddenElements">You agree to the terms and conditions.</div>
+            <div id="checkboxQuestion">Do you agree to the terms and conditions?</div>
+          </label>
+        </div>
+        <div class="buttonContainer">
+          <button type="submit" id="signup" class="confirmSignup">Sign up</button>
+          <button type="submit" id="confirm" class="confirmSignup hiddenElements">Click here to sign up!</button>
+          <button type="submit" id="thankyou" class="confirmSignup hiddenElements">Thank you!</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    <script type="module" src="https://unpkg.com/i18next@23.7.18/dist/umd/i18next.min.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./js/i18next.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e12ffe9655.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

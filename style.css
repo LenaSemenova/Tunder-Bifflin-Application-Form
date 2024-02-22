@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Lumanosimo&family=Pangolin&display=swap");
+.giphy-embed {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 20%;
+  left: 0;
+  z-index: -1;
+  animation: fly 20s ease;
+  animation-iteration-count: infinite;
+}
+@keyframes fly {
+  0% {
+    top: 20%;
+    left: 0;
+    transform: translate(-100%, 0) rotate(20deg) skew(-5deg);
+  }
+  15% {
+    top: 0;
+    left: 15%;
+    transform: rotate(-20deg) skew(-5deg);
+  }
+  30% {
+    top: 20%;
+    left: 30%;
+    transform: rotate(-25deg) skew(-5deg);
+  }
+  45% {
+    top: 0;
+    left: 45%;
+    transform: rotate(-20deg) skew(-5deg);
+  }
+  60% {
+    top: 20%;
+    left: 60%;
+    transform: rotate(-25deg);
+  }
+  75% {
+    top: 0;
+    left: 80%;
+    transform: translate(-100%, 0) rotate(-30deg);
+  }
+  80% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-20deg);
+  }
+  82% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-25deg);
+  }
+  85% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-30deg);
+  }
+  86% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-32.5deg);
+  }
+  87% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-35deg);
+  }
+  85% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-37.5deg);
+  }
+  89% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-40deg);
+  }
+  90% {
+    top: 20%;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(-55deg);
+  }
+  100% {
+    top: 20%;
+    left: 0;
+    transform: rotate(-25deg);
+  }
+}
+input {
+  display: block;
+  margin: 10px 0 10px 0;
+  border: 1px solid black;
+  transition: background 0.2s ease-out;
+}
+select {
+  display: block;
+  margin: 10px 0 10px 0;
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+  transition: background 0.2s ease-out;
+}
+div {
+  padding: 10px 10px 10px 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+.containerLarge {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.containerSmall {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.containerLogo {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.companyName {
+  border: none;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Lumanosimo;
+  font-size: 30px;
+}
+.slogan {
+  border: none;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+}
+.containerForms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.titleTwo {
+  border: 1px solid black;
+  background: #e0ffff;
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+  text-align: center;
+}
+span {
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+  height: 45px;
+  width: 250px;
+  background: lightcyan;
+  border-radius: 25% 10%;
+}
+button:hover {
+  background: lightgreen;
+  box-shadow: 10px 5px 5px green;
+  transition: 0.2s ease-out;
+}
+fieldset {
+  border: 1px solid black;
+  transition: box-shadow 0.2s;
+}
+fieldset:hover {
+  box-shadow: 5px 5px 5px lightgrey;
+}
+input:hover,
+input:focus {
+  background: lightcyan;
+}
+select:hover,
+select:focus {
+  background: lightcyan;
+}
+.afterSubmission {
+  display: block;
+  border: 1px solid black;
+  background: linear-gradient(#ffffff, #e0ffff);
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+.forInputFields {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fieldsAfterSubmission {
+  opacity: 0.5;
+}
+.buttonAfterFirstSubmission {
+  width: 192px;
+  height: 75px;
+  transition: width 2s ease-out;
+}
+.beforeSubmission {
+  display: none;
+}
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Edu SA Beginner, cursive;
+  font-size: 20px;
+}
+.checkboxWrapper input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-right: 16px;
+  background: linear-gradient(#ffffff, #add8e6);
+}
+.checkboxWrapper:hover input ~ .checkmark {
+  background: linear-gradient(#cccccc, #000080);
+}
+.checkboxWrapper input:checked ~ .checkmark {
+  background: linear-gradient(lightblue, navy);
+  border: 1px solid black;
+}
+.checkmark:after {
+  content: "";
+  display: none;
+}
+.checkboxWrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkboxWrapper .checkmark:after {
+  position: relative;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+i {
+  margin-left: 16px;
+}
+.input_RU {
+  width: 230px;
+}
+.confirmSignup_RU {
+  width: 250px;
+}
+.hiddenElements {
+  display: none;
+}
+.invalidInfos {
+  border: solid red;
+}
+#changeLanguage {
+  width: 66px;
+}
+@media only screen and (min-width: 540px) {
+  .giphy-embed {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+  }
+  .companyName {
+    font-size: 50px;
+  }
+  .slogan {
+    font-size: 45px;
+  }
+  .titleTwo {
+    font-size: 40px;
+  }
+  input {
+    width: 280px;
+    height: 35px;
+  }
+  span {
+    font-size: 40px;
+  }
+  select {
+    font-size: 40px;
+  }
+  button {
+    height: 75px;
+    width: 436px;
+    font-size: 40px;
+  }
+  .afterSubmission {
+    font-size: 35px;
+  }
+  .fieldsAfterSubmission {
+    opacity: 0.5;
+  }
+  .buttonAfterFirstSubmission {
+    width: 578px;
+    height: 75px;
+  }
+  .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .checkboxWrapper {
+    font-size: 40px;
+  }
+  .checkboxWrapper .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 7px;
+    height: 12px;
+  }
+  i {
+    margin-left: 32px;
+  }
+  .input_RU {
+    width: 386px;
+  }
+  .confirmSignup_RU {
+    width: 436px;
+  }
+  .hiddenElements {
+    display: none;
+  }
+  #changeLanguage {
+    width: 99px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .giphy-embed {
+    position: absolute;
+    width: 360px;
+    height: 400px;
+  }
+  .containerSmall {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(2, 100px);
+  }
+  .companyName {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    font-size: 50px;
+  }
+  .slogan {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    font-size: 45px;
+  }
+  .containerLogo {
+    flex-direction: column;
+    grid-column: 5;
+    grid-row: 1 / span 4;
+  }
+  .titleTwo {
+    font-size: 45px;
+  }
+  span {
+    font-size: 45px;
+  }
+  select {
+    font-size: 45px;
+  }
+  button {
+    height: 100px;
+    width: 480px;
+    font-size: 45px;
+  }
+  .fieldsAfterSubmission {
+    opacity: 0.5;
+  }
+  input {
+    width: 330px;
+    height: 35px;
+  }
+  .afterSubmission {
+    font-size: 45px;
+  }
+  .buttonAfterFirstSubmission {
+    width: 688px;
+    height: 75px;
+  }
+  .checkmark {
+    height: 35px;
+    width: 35px;
+  }
+  .checkboxWrapper {
+    font-size: 45px;
+  }
+  .checkboxWrapper .checkmark:after {
+    left: 12px;
+    top: 6px;
+    width: 8px;
+    height: 15px;
+  }
+  i {
+    margin-left: 44px;
+  }
+  .confirmSignup_RU {
+    width: 480px;
+  }
+  .hiddenElements {
+    display: none;
+  }
+  #changeLanguage {
+    width: 132px;
+  }
+}
